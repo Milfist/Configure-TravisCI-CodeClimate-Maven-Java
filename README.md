@@ -3,11 +3,11 @@
 # Configure-TravisCI-CodeClimate-Maven-Java
 
 ## Description
- Explanation of how to configure a Java project with Travis CI, CodeClimate Coverage and Maven
+ Explanation of how to configure a Java project with Travis CI, **CodeClimate Coverage** and Maven
 
 ### What is the problem?
 
-The CodeClimate coverage badge, with this particular configuration, is quite complicated to achieve. There is very little documentation, just a few unclear posts and the documentation of CodeClimate is ... bad, little updated and is pure disinformation. While other code evaluation platforms such as Sonarcloud or Codecov, are very simple and with good documentation, with CodeClimate we have to roll up and get to the bottom.
+The **CodeClimate coverage badge**, with this particular configuration, is quite complicated to achieve. There is very little documentation, just a few unclear posts and the documentation of CodeClimate is ... bad, little updated and is pure disinformation. While other code evaluation platforms such as Sonarcloud or Codecov, are very simple and with good documentation, with CodeClimate we have to roll up and get to the bottom.
 
 ### Let's do it
 
@@ -115,7 +115,7 @@ This configuration is different from what you will find in the official document
               - ./cc-test-reporter format-coverage -d -t jacoco ./target/jacoco-ut/jacoco.xml
               - ./cc-test-reporter upload-coverage -d
 
-#####Part by part
+##### Part by part
 
 The first three lines are common and you will already know them.
 The env block is the coverage token that relates the execution to CodeClimate. This token is only for this, not being used to post against your repository or anything weird. I have read this information in the CodeClimate forums written by them. I have tried to do it through this that I show you:
